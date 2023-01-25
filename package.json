@@ -1,0 +1,32 @@
+{
+  "name": "vite-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-forms": "github:mithyalabs/react-forms",
+    "timer-npm-pluging": "^1.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/react": "^16.14.35",
+    "@types/react-dom": "^16.9.17",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-react": "^7.32.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}
