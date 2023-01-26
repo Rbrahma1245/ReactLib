@@ -6,9 +6,6 @@ import "./styles.css"
 
 
 
-
-
-
 interface CheckboxProps {
     menuOptions: menuOptions[];
     name: string
@@ -61,7 +58,7 @@ const CheckBox: React.FC<CheckboxProps> = (props) => {
             {
                 (errorFlag || helpertext) &&
                 (
-                    <label>{errorFlag ? <label className="fieldError">{fieldError}</label> :
+                    <label className="label-error">{errorFlag ? <span className="fieldError">{fieldError}</span> :
                         <label className="helpertext">{helpertext} </label>}</label>
                 )
             }

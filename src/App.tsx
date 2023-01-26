@@ -7,6 +7,7 @@ import { Formik } from "formik";
 import * as yup from 'yup';
 // import CheckBox from "./components/Checkbox";
 import CheckBox from "./components/Checkbox/index"
+import TextField from "./components/TextField";
 
 
 // attachField("checkBox-1", <MUICheckBox />);
@@ -49,6 +50,17 @@ const FormSchema = yup.object({
 });
 
 
+// const fieldProps: FieldProps =
+// {
+// 	header: 'Label',
+// 	helpertext: "Please fill the details"
+// };
+
+// const FormSchema = yup.object({
+// 	name: yup.string().required("Invalid"),
+// });
+
+
 
 
 function App() {
@@ -57,6 +69,7 @@ function App() {
 		<div>
 			<Formik initialValues={{
 				gender: '',
+				// name: ''
 			}}
 				validationSchema={FormSchema}
 
@@ -67,6 +80,10 @@ function App() {
 						<form className="form" onSubmit={formikProp.handleSubmit}>
 							<CheckBox menuOptions={menuOptions} name={"gender"} fieldProps={fieldProps} formikProps={formikProp} />
 							{/* <CheckBox menuOptions={menuOptions1} name={"school"} fieldProps={fieldProps} formikProps={formikProp} /> */}
+
+							{/* <TextField fieldProps={fieldProps} formikProps={formikProp} /> */}
+
+
 
 							<button className="btn-submit" type="submit">Submit</button>
 
